@@ -1,13 +1,36 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-<meta name="renderer" content="webkit">
-<meta http-equiv="Cache-Control" content="no-siteapp"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
 
-<title>乱写一通|</title>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+  <link rel="alternate" href="/default" title="乱写一通" >
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1.1" />
+
+
+
+<link rel="canonical" href="https://mostlucky.cn/"/>
+
+
 <meta property="og:type" content="website">
 <meta property="og:title" content="乱写一通">
 <meta property="og:url" content="https://mostlucky.cn/index.html">
@@ -17,248 +40,213 @@
 <meta name="twitter:card" content="summary">
 
 
-<meta name="author" content="STao,undefined">
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
 
 
-<link rel="shortcut icon" href="/favicon.png" type="image/x-icon"/>
-<link rel="icon" href="/favicon.png">
 
 
-<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-
-<link rel="stylesheet" href="/css/theme.css">
-
-
-<link rel="stylesheet" href="/css/syntax.css">
-
-
-<link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
-
-
-<link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.1.0/styles/arta.min.css">
-
-<!--baidu analytics-->
-
-<meta name="generator" content="Hexo 6.0.0"></head>
-<body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            
-            <a class="navbar-brand" href="/.">乱写一通</a>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                
-                <li><a href="/." class="current"><i class="icon-home"> Home</i></a></li>
-                
-                <li><a href="/archives/"><i class="icon-archive"> Archive</i></a></li>
-                
-                <li><a href="/atom.xml"><i class="icon-rss"> RSS</i></a></li>
-                
-                <li><a href="/about/"><i class="icon-about"> About</i></a></li>
-                
-            </ul>
-        </div>
-    </div>
-</nav>
-<div class="wrapper">
-    <div class="content">
-        <div class="container container-center">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="well">
-
-<div class="post">
-    <h2 class="post-title">
-        <a href="/2022/01/07/pymssql%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/">pymssql安装问题</a>
-    </h2>
-    <div class="post-meta">
-        <div class="post-time">
-            <i class="fa fa-calendar"></i><time> 2022-01-07</time>
-        </div>
-    </div>
-    <div class="post-descr">
-        
-        
-        
-        <h1 id="pip安装pymssql时报错：fatal-error-sqlfront-h-No-such-file-or-directory"><a href="#pip安装pymssql时报错：fatal-error-sqlfront-h-No-such-file-or-directory" class="headerlink" title="pip安装pymssql时报错：fatal error: sqlfront.h: No such file or directory"></a>pip安装pymssql时报错：fatal error: sqlfront.h: No such file or directory</h1><h2 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Collecting pymssql                                                                        Using cached pymssql-2.2.3.tar.gz (170 kB)                                               Installing build dependencies ... done                                                   Getting requirements to build wheel ... done                                             Preparing metadata (pyproject.toml) ... done                                             Building wheels for collected packages: pymssql                                           Building wheel for pymssql (pyproject.toml) ... error                                     ERROR: Command errored out with exit status 1:                                           command: /home/dell/.pyenv/versions/3.10.1/bin/python/home/dell/.pyenv/versions/3.10.1/lib/python3.10/site-packages/pip/_vendor/pep517/in_process/_in_process.py build_wheel/tmp/tmpjs6mqmys                                                                cwd: /tmp/pip-install-4gfsd712/pymssql_5c81d471e86a464a89e36fe5e91c6061                   Complete output (22 lines):                                                               setup.py: platform.system() =&gt; Linux                                                     setup.py: platform.architecture() =&gt; (&#x27;64bit&#x27;, &#x27;ELF&#x27;)                                     setup.py: platform.libc_ver() =&gt; (&#x27;glibc&#x27;, &#x27;2.27&#x27;)                                       setup.py: include_dirs =&gt; []                                                             setup.py: library_dirs =&gt; []                                                             running bdist_wheel                                                                       running build                                                                             running build_py                                                                         creating build                                                                           creating build/lib.linux-x86_64-3.10                                                     creating build/lib.linux-x86_64-3.10/pymssql                                             copying src/pymssql/__init__.py -&gt; build/lib.linux-x86_64-3.10/pymssql                   running build_ext                                                                         creating build/temp.linux-x86_64-3.10                                                     creating build/temp.linux-x86_64-3.10/src                                                 creating build/temp.linux-x86_64-3.10/src/pymssql                                         gcc -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/home/dell/.pyenv/versions/3.10.1/include/python3.10 -c src/pymssql/_mssql.c -o build/temp.linux-x86_64-3.10/src/pymssql/_mssql.o -DMSDBLIB                                src/pymssql/_mssql.c:682:10: fatal error: sqlfront.h: No such file or directory           #include &quot;sqlfront.h&quot;                                                                     ^~~~~~~~~~~~                                                                             compilation terminated.                                                                   error: command &#x27;/usr/bin/gcc&#x27; failed with exit code 1                                     ----------------------------------------                                                 ERROR: Failed building wheel for pymssql                                                 Failed to build pymssql                                                                   ERROR: Could not build wheels for pymssql, which is required to install pyproject.toml-based projects</span><br></pre></td></tr></table></figure>
-        
-        
-    </div>
-    <p class="readmore">
-        <a href="/2022/01/07/pymssql%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/">Read More</a>
-    </p>
-</div>
-
-<div class="post">
-    <h2 class="post-title">
-        <a href="/2022/01/06/firstPost/">firstPost</a>
-    </h2>
-    <div class="post-meta">
-        <div class="post-time">
-            <i class="fa fa-calendar"></i><time> 2022-01-06</time>
-        </div>
-    </div>
-    <div class="post-descr">
-        
-        
-        
-        <p>This is a test!</p>
-        
-        
-    </div>
-    <p class="readmore">
-        <a href="/2022/01/06/firstPost/">Read More</a>
-    </p>
-</div>
-
-<div class="post">
-    <h2 class="post-title">
-        <a href="/2022/01/01/hello-world/">Hello World</a>
-    </h2>
-    <div class="post-meta">
-        <div class="post-time">
-            <i class="fa fa-calendar"></i><time> 2022-01-01</time>
-        </div>
-    </div>
-    <div class="post-descr">
-        
-        
-        
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-        
-        
-    </div>
-    <p class="readmore">
-        <a href="/2022/01/01/hello-world/">Read More</a>
-    </p>
-</div>
-
-<div class="post-footer">
-    
-    
-</div>
-
-
-</div>
-                </div>
-                <div class="col-md-4 hidden-xs">
-                    
-<div class="sidebar">
-    <div class="well">
-        <h2>Tag Cloud</h2>
-        
-    </div>
-</div>
-
-<div class="sidebar">
-    <div class="well">
-        <h2>Archive</h2>
-        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">2022年01月</a><span class="archive-list-count">3</span></li></ul>
-    </div>
-</div>
-
-<div class="sidebar ">
-    <div class="well">
-        <h2>Recent</h2>
-        <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2022/01/07/pymssql%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/">pymssql安装问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/01/06/firstPost/">firstPost</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/01/01/hello-world/">Hello World</a></li></ul>
-    </div>
-</div>
-
-<div class="sidebar">
-    <div class="well">
-        <h2>Blogroll</h2>
-        <ul>
-            
-        </ul>
-    </div>
-</div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="side-button-wrap">
-        <a id="to-top" class="side-button icon-up-arrow" href="#top"></a>
-        <a id="to-home" class="side-button icon-home" href="/."></a>
-        <a id="to-comment-button" class="side-button icon-msg" href="#comment"></a>
-        <a id="to-bottom-button" class="side-button icon-down-arrow" href="#bottom"></a>
-    </div>
-    <a id="bottom" name="bottom"></a>
-    <footer id="footer" class="footer-distributed" style="background-color: #222222;">
-    <div class="container">
-        <div class="footer">
-            <p>STao &copy; 2022</p>
-            <ul class="social-media">
-                
-                
-                <li>
-                    <a title="hexo-theme-clean-dark" href="https://github.com/howardliu-cn/hexo-theme-clean-dark"
-                       target="_blank">
-                        <i class="fa fa-film fa-2x"></i>
-                    </a>
-                </li>
-                
-            </ul>
-        </div>
-    </div>
-</footer>
-
-</div>
-
-<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
-
-
-<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-
-<script src="//cdn.bootcss.com/highlight.js/9.1.0/highlight.min.js"></script>
-
-<script>hljs.initHighlightingOnLoad();</script>
-
-<script src="/js/header.js"></script>
-
-
-<script src="/js/toc.js"></script>
-
-<!--[if lt IE 9]>
-
-<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-
-![endif]-->
-<!--fancybox-->
-
-<script src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
-<script src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-<link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
-<script>
-    $(document).ready(function () {
-        $("img").each(function (index, item) {
-            var p = $(item).parents()[0];
-            if($(p).is('a')) {
-                $(p).fancybox();
-                return;
-            }
-            $(p).append(function() {return "<a id='fancybox_id_"+index+"' href='" + $(item).attr("src") + "'></a>";});
-            item.remove();
-            var fancyboxItem = $("#fancybox_id_" + index);
-            fancyboxItem.append($(item));
-            fancyboxItem.fancybox();
-        });
-    });
+<script type="text/javascript">
+  var themeConfig = {
+    fancybox: {
+      enable: false
+    },
+  };
 </script>
 
-<!--baidu auto-push-->
 
-<!--google analytics-->
 
-<script color="255,255,255" opacity='0.9' zIndex="-1" count="150" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-</body>
+
+  
+
+
+
+    <title> 乱写一通 - </title>
+  <meta name="generator" content="Hexo 6.0.0"></head>
+
+  <body>
+    <div id="page">
+      <header id="masthead"><div class="site-header-inner">
+    <h1 class="site-title">
+        <a href="/." class="logo">乱写一通</a>
+    </h1>
+
+    <nav id="nav-top">
+        
+            <ul id="menu-top" class="nav-top-items">
+                
+                    <li class="menu-item">
+                        <a href="/archives">
+                            
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="/about">
+                            
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        
+  </nav>
+</div>
+
+      </header>
+      <div id="content">
+        
+    <div id="primary" class="home">
+        
+            
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          <a class="post-link" href="/2022/01/07/pymssql%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/">pymssql安装问题</a>
+        
+      </h1>
+
+      <time class="post-time">
+          Jan 07 2022
+      </time>
+    </header>
+
+
+
+    
+        <div class="post-excerpt post-content">
+            
+            
+
+            
+          
+
+    
+  </article>
+
+        
+            
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          <a class="post-link" href="/2022/01/06/firstPost/">firstPost</a>
+        
+      </h1>
+
+      <time class="post-time">
+          Jan 06 2022
+      </time>
+    </header>
+
+
+
+    
+        <div class="post-excerpt post-content">
+            
+            
+
+            
+          
+
+    
+  </article>
+
+        
+            
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          <a class="post-link" href="/2022/01/01/hello-world/">Hello World</a>
+        
+      </h1>
+
+      <time class="post-time">
+          Jan 01 2022
+      </time>
+    </header>
+
+
+
+    
+        <div class="post-excerpt post-content">
+            
+            
+
+            
+          
+
+    
+  </article>
+
+        
+        
+  <nav class="pagination">
+    
+    
+  </nav>
+
+    </div>
+    <div id="secondary">
+    
+
+    
+
+    
+    <section id="tags" class="widget-area widget_tags">
+        <h3 class="widget-title">Tags</h3>
+        
+    </section>
+
+
+</div>
+
+
+      </div>
+
+      <footer id="colophon"><span class="copyright-year">
+    
+        &copy;
+    
+        2014 -
+    
+    2022
+    <span class="footer-author">STao.</span>
+    <span class="power-by">
+        Powered by <a class="hexo-link" target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> and <a class="theme-link" target="_blank" rel="noopener" href="https://github.com/frostfan/hexo-theme-polarbear">Polar Bear</a>
+    </span>
+</span>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+    
+
+
+    
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+
+    <script type="text/javascript" src="/js/src/theme.js?v=1.1"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=1.1"></script>
+
+  </body>
 </html>

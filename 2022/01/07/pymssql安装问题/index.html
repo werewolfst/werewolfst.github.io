@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="description" content="pymssql安装问题"/>
+
+
+
+
+
+
+
+
+  <link rel="alternate" href="/default" title="乱写一通" >
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1.1" />
+
+
+
+<link rel="canonical" href="https://mostlucky.cn/2022/01/07/pymssql安装问题/"/>
+
+
+<meta name="description" content="pip安装pymssql时报错：fatal error: sqlfront.h: No such file or directory报错1Collecting pymssql                                                                        Using cached pymssql-2.2.3.tar.gz (170 kB">
+<meta property="og:type" content="article">
+<meta property="og:title" content="pymssql安装问题">
+<meta property="og:url" content="https://mostlucky.cn/2022/01/07/pymssql%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/index.html">
+<meta property="og:site_name" content="乱写一通">
+<meta property="og:description" content="pip安装pymssql时报错：fatal error: sqlfront.h: No such file or directory报错1Collecting pymssql                                                                        Using cached pymssql-2.2.3.tar.gz (170 kB">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-01-07T04:08:52.000Z">
+<meta property="article:modified_time" content="2022-01-07T04:27:28.830Z">
+<meta property="article:author" content="STao">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+
+
+
+
+
+<script type="text/javascript">
+  var themeConfig = {
+    fancybox: {
+      enable: false
+    },
+  };
+</script>
+
+
+
+
+  
+
+
+
+    <title> pymssql安装问题 - 乱写一通 </title>
+  <meta name="generator" content="Hexo 6.0.0"></head>
+
+  <body>
+    <div id="page">
+      <header id="masthead"><div class="site-header-inner">
+    <h1 class="site-title">
+        <a href="/." class="logo">乱写一通</a>
+    </h1>
+
+    <nav id="nav-top">
+        
+            <ul id="menu-top" class="nav-top-items">
+                
+                    <li class="menu-item">
+                        <a href="/archives">
+                            
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="/about">
+                            
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        
+  </nav>
+</div>
+
+      </header>
+      <div id="content">
+        
+    <div id="primary">
+        
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          pymssql安装问题
+        
+      </h1>
+
+      <time class="post-time">
+          Jan 07 2022
+      </time>
+    </header>
+
+
+
+    
+            <div class="post-content">
+            <h1 id="pip安装pymssql时报错：fatal-error-sqlfront-h-No-such-file-or-directory"><a href="#pip安装pymssql时报错：fatal-error-sqlfront-h-No-such-file-or-directory" class="headerlink" title="pip安装pymssql时报错：fatal error: sqlfront.h: No such file or directory"></a>pip安装pymssql时报错：fatal error: sqlfront.h: No such file or directory</h1><h2 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Collecting pymssql                                                                        Using cached pymssql-2.2.3.tar.gz (170 kB)                                               Installing build dependencies ... done                                                   Getting requirements to build wheel ... done                                             Preparing metadata (pyproject.toml) ... done                                             Building wheels for collected packages: pymssql                                           Building wheel for pymssql (pyproject.toml) ... error                                     ERROR: Command errored out with exit status 1:                                           command: /home/dell/.pyenv/versions/3.10.1/bin/python/home/dell/.pyenv/versions/3.10.1/lib/python3.10/site-packages/pip/_vendor/pep517/in_process/_in_process.py build_wheel/tmp/tmpjs6mqmys                                                                cwd: /tmp/pip-install-4gfsd712/pymssql_5c81d471e86a464a89e36fe5e91c6061                   Complete output (22 lines):                                                               setup.py: platform.system() =&gt; Linux                                                     setup.py: platform.architecture() =&gt; (&#x27;64bit&#x27;, &#x27;ELF&#x27;)                                     setup.py: platform.libc_ver() =&gt; (&#x27;glibc&#x27;, &#x27;2.27&#x27;)                                       setup.py: include_dirs =&gt; []                                                             setup.py: library_dirs =&gt; []                                                             running bdist_wheel                                                                       running build                                                                             running build_py                                                                         creating build                                                                           creating build/lib.linux-x86_64-3.10                                                     creating build/lib.linux-x86_64-3.10/pymssql                                             copying src/pymssql/__init__.py -&gt; build/lib.linux-x86_64-3.10/pymssql                   running build_ext                                                                         creating build/temp.linux-x86_64-3.10                                                     creating build/temp.linux-x86_64-3.10/src                                                 creating build/temp.linux-x86_64-3.10/src/pymssql                                         gcc -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/home/dell/.pyenv/versions/3.10.1/include/python3.10 -c src/pymssql/_mssql.c -o build/temp.linux-x86_64-3.10/src/pymssql/_mssql.o -DMSDBLIB                                src/pymssql/_mssql.c:682:10: fatal error: sqlfront.h: No such file or directory           #include &quot;sqlfront.h&quot;                                                                     ^~~~~~~~~~~~                                                                             compilation terminated.                                                                   error: command &#x27;/usr/bin/gcc&#x27; failed with exit code 1                                     ----------------------------------------                                                 ERROR: Failed building wheel for pymssql                                                 Failed to build pymssql                                                                   ERROR: Could not build wheels for pymssql, which is required to install pyproject.toml-based projects</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install freetds-dev</span><br></pre></td></tr></table></figure>
+
+
+            </div>
+          
+
+    
+      <footer class="post-footer">
+		
+
+        
+        
+  <nav class="post-nav">
+    
+    
+      <a class="next" href="/2022/01/06/firstPost/">
+        <span class="next-text nav-default">firstPost</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+        
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+      </footer>
+    
+  </article>
+
+    </div>
+
+      </div>
+
+      <footer id="colophon"><span class="copyright-year">
+    
+        &copy;
+    
+        2014 -
+    
+    2022
+    <span class="footer-author">STao.</span>
+    <span class="power-by">
+        Powered by <a class="hexo-link" target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> and <a class="theme-link" target="_blank" rel="noopener" href="https://github.com/frostfan/hexo-theme-polarbear">Polar Bear</a>
+    </span>
+</span>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+    
+
+
+    
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+
+    <script type="text/javascript" src="/js/src/theme.js?v=1.1"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=1.1"></script>
+
+  </body>
+</html>
